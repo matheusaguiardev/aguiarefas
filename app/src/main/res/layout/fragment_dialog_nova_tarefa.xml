@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+android:padding="16dp">
+
+
+    <android.support.v7.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/tituloTarefaTextView"
+                                                 android:text="Titulo da tarefa"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 android:layout_marginTop="8dp"
+                                                 app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatEditText android:layout_width="0dp"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/tituloTarefaEditText"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/tituloTarefaTextView"
+    />
+
+    <android.support.v7.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/descricaoTarefaTextView"
+                                                 android:text="Descricao da tarefa"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/tituloTarefaEditText"
+    />
+
+    <android.support.v7.widget.AppCompatEditText android:layout_width="0dp"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/descricaoTarefaEditText"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/descricaoTarefaTextView"
+
+    />
+
+    <android.support.v7.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/lembrarTextView"
+                                                 android:text="Lembrar em:"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/descricaoTarefaEditText"
+    />
+
+    <android.support.v7.widget.AppCompatEditText android:layout_width="0dp"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/lembrarEditText"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/lembrarTextView"
+    />
+
+    <android.support.v7.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:id="@+id/importanciaTextView"
+                                                 android:text="Importancia"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/lembrarEditText"
+    />
+
+    <android.support.v7.widget.AppCompatSpinner android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/importanciaSpinner"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/importanciaTextView"
+    />
+
+    <android.support.v7.widget.AppCompatButton android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:id="@+id/criarTarefaButton"
+                                               android:background="@color/colorAccent"
+                                               android:text="Criar"
+                                               android:layout_marginBottom="32dp"
+                                               app:layout_constraintBottom_toBottomOf="parent"
+                                               android:layout_marginEnd="8dp"
+                                               app:layout_constraintEnd_toEndOf="parent"
+                                               android:layout_marginStart="8dp"
+                                               app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
